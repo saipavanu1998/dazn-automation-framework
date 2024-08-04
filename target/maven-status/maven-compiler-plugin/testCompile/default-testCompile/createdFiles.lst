@@ -1,0 +1,5 @@
+com\dazn\automation\tests\BaseTest.class
+com\dazn\automation\tests\EventPageTest.class
+com\dazn\automation\tests\HomePageTest.class
+com\dazn\automation\tests\package-info.class
+com\dazn\automation\tests\LoginTest.class
