@@ -10,12 +10,12 @@ public class HomePage {
     private WebDriver driver;
     private Waits waits;
     private JavaScriptUtils jsUtils;
-
+   
     // Locators for elements on the HomePage
    
     private By offerPopUp = By.xpath("(//div[@class='OfferPopup__content___3FXDU OfferPopup__content-new-layout___1glrq'])[1]");
-    private By startWatching = By.xpath("(//button[@class='sc-pyfCe sc-kDvujY gTYMya ihnwix OfferPopup__cta___39Cvo OfferPopup__cta-new-layout___1LvRF'])[1]");
-    private By eventName = By.xpath("(//h4[normalize-space()='Honor of Kings - Day 3'])");
+    private By startWatching = By.xpath("(//button[@class='sc-pyfCe sc-kDvujY gTYMya ihnwix OfferPopup__cta___39Cvo OfferPopup__cta-new-layout___1LvRF OfferPopup__nfl-monthly-flex-cta-instalments___365IP'])");
+    private By eventName = By.xpath("//h4[normalize-space()='Giants v Swallows']");
     
     
     public HomePage(WebDriver driver) {
@@ -24,9 +24,9 @@ public class HomePage {
         jsUtils = new JavaScriptUtils(driver);
     }
 
-    public void waitforPopUp() {
+    public boolean isOfferPopUpDisplayed() {
         WebElement acceptButton = waits.waitForVisibilityOfElement(offerPopUp);
-        acceptButton.click();
+		return true;
     }
     
     public void goToEvent()
@@ -34,11 +34,10 @@ public class HomePage {
     	WebElement event = waits.waitForPresenceOfElementToBeClickable(eventName);
     	WebElement event1=jsUtils.scrollToElement(event);
     	jsUtils.clickElement(event1);
-    	
     }
  
 
-    public void clickonStartWatching() {
+    public void clickOnStartWatching() {
         WebElement element = waits.waitForElementToBeClickable(startWatching);
        
         element.click();

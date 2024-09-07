@@ -27,8 +27,8 @@ public class HomePageTest {
     
     @Test(priority=1)
     public void testPopUpAvailability() {
-        homePage.waitforPopUp();
-        homePage.clickonStartWatching();
+        homePage.isOfferPopUpDisplayed();
+        homePage.clickOnStartWatching();
         
         
     }
@@ -40,6 +40,7 @@ public class HomePageTest {
         
         
     }
+    
     @AfterClass
     public void tearDown() {
         if (driver != null) {

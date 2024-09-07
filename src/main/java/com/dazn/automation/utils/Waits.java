@@ -29,5 +29,8 @@ public class Waits {
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+    public boolean waitForInvisibilityOfElement(By locator) {
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
     // Add more wait methods as needed
 }

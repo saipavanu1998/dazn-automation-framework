@@ -6,6 +6,7 @@
       <class name="com.dazn.automation.tests.HomePageTest">
         <methods>
           <include name="setUp"/>
+          <include name="testEventAvailability"/>
           <include name="testPopUpAvailability"/>
           <include name="tearDown"/>
         </methods>
@@ -14,6 +15,8 @@
         <methods>
           <include name="testOpenEvent"/>
           <include name="setUp"/>
+          <include name="startTexting"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.dazn.automation.tests.EventPageTest -->
     </classes>

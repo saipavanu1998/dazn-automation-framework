@@ -8,6 +8,8 @@
           <include name="testPopUpAvailability"/>
           <include name="testOpenEvent"/>
           <include name="setUp"/>
+          <include name="startTexting"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.dazn.automation.tests.EventPageTest -->
     </classes>
