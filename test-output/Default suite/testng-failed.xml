@@ -5,7 +5,6 @@
     <classes>
       <class name="com.dazn.automation.tests.EventPageTest">
         <methods>
-          <include name="testPopUpAvailability"/>
           <include name="testOpenEvent"/>
           <include name="setUp"/>
           <include name="startTexting"/>

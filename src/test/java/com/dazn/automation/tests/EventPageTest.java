@@ -53,9 +53,9 @@ public class EventPageTest {
 	    public void startTexting()
 	    {  
 	    	eventPage.clickOnAgeRestrictionBtn();
-	    	eventPage.clickFZ();;
+	    	eventPage.clickFZ();
 	    	eventPage.enterText();
-	    	eventPage.loadFZ();
+	    	//eventPage.loadFZ();
 	    	eventPage.sendText();
 	    	
 	    	

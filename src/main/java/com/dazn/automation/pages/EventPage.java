@@ -19,8 +19,8 @@ public class EventPage {
 	private By sendMessage = By.xpath("//div[@class='sc-hmLeec TCspB']");
 	private By messageList = By.xpath("//div[@data-testid=\"messages-list-container\"]");
 	private By fzLoader = By.cssSelector(".sc-evZas.jFUGBX.loader-container");
-	private By ShowFZ = By.xpath("(//button[@class='sc-crXcEl couCKK'])[1]");
-	private By ageRestrictionBtn = By.xpath("//div[contains(text(),'YES, I AM OVER 18')]");
+	private By ShowFZ = By.xpath("(//div[@class='sc-breuTD cznXtV'])[1]");
+	private By ageRestrictionBtn = By.cssSelector(".sc-breuTD.cznXtV");
 	
 	
 	private By chatMessages = By.xpath("(//div[@class='sc-tQuYZ bRrJnM'])");

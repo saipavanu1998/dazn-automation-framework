@@ -5,15 +5,14 @@
     <classes>
       <class name="com.dazn.automation.tests.HomePageTest">
         <methods>
-          <include name="setUp"/>
           <include name="testEventAvailability"/>
+          <include name="setUp"/>
           <include name="testPopUpAvailability"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.dazn.automation.tests.HomePageTest -->
       <class name="com.dazn.automation.tests.EventPageTest">
         <methods>
-          <include name="testOpenEvent"/>
           <include name="setUp"/>
           <include name="startTexting"/>
           <include name="tearDown"/>

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation Test Suite" parallel="false">
+
+    <!-- Define multiple tests -->
+   
+
+    <test name="Regression Tests">
+        <classes>
+            <!-- Define regression test classes -->
+            <class name="com.automation.tests.EventPage.java" />
+        </classes>
+    </test>
+
+</suite>

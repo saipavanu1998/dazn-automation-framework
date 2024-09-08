@@ -1,4 +1,5 @@
 com\dazn\automation\utils\JavaScriptUtils.class
+com\dazn\automation\utils\ScreenShotUtil.class
 dummy\package-info.class
 com\dazn\automation\pages\package-info.class
 dummy\Test.class
