@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-07T23:27:53 IST" name="Default suite" finished-at="2024-09-07T23:29:52 IST" duration-ms="119241">
+  <suite started-at="2024-09-08T12:13:31 IST" name="Default suite" finished-at="2024-09-08T12:15:41 IST" duration-ms="129999">
     <groups>
     </groups>
-    <test started-at="2024-09-07T23:27:53 IST" name="Default test" finished-at="2024-09-07T23:29:52 IST" duration-ms="119241">
+    <test started-at="2024-09-08T12:13:31 IST" name="Default test" finished-at="2024-09-08T12:15:41 IST" duration-ms="129999">
       <class name="com.dazn.automation.tests.EventPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-07T23:27:53 IST" name="setUp" finished-at="2024-09-07T23:28:01 IST" duration-ms="8304" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-08T12:13:31 IST" name="setUp" finished-at="2024-09-08T12:13:38 IST" duration-ms="6524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testPopUpAvailability()[pri:1, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-07T23:28:01 IST" name="testPopUpAvailability" finished-at="2024-09-07T23:28:08 IST" duration-ms="6205" status="PASS">
+        <test-method signature="testPopUpAvailability()[pri:1, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-08T12:13:38 IST" name="testPopUpAvailability" finished-at="2024-09-08T12:14:21 IST" duration-ms="42845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPopUpAvailability -->
-        <test-method signature="testOpenEvent()[pri:2, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-07T23:28:08 IST" name="testOpenEvent" finished-at="2024-09-07T23:29:02 IST" duration-ms="54328" status="FAIL">
+        <test-method signature="testOpenEvent()[pri:2, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-08T12:14:21 IST" name="testOpenEvent" finished-at="2024-09-08T12:14:51 IST" duration-ms="30027" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//button[@class='watch-from-start__join-live-button___1LqiX'])[1] (tried for 50 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //h4[normalize-space()='EKO Acropolis Rally Greece: Stage 13'] (tried for 30 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[@class='watch-from-start__join-live-button___1LqiX'])[1] (tried for 50 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h4[normalize-space()='EKO Acropolis Rally Greece: Stage 13'] (tried for 30 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.dazn.automation.utils.Waits.waitForVisibilityOfElement(Waits.java:22)
-at com.dazn.automation.pages.EventPage.joinEvent(EventPage.java:37)
-at com.dazn.automation.tests.EventPageTest.testOpenEvent(EventPageTest.java:48)
+at com.dazn.automation.utils.Waits.waitForPresenceOfElementToBeClickable(Waits.java:29)
+at com.dazn.automation.pages.HomePage.goToEvent(HomePage.java:43)
+at com.dazn.automation.tests.EventPageTest.testOpenEvent(EventPageTest.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,9 +61,9 @@ from unknown error: web view not found
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc4d57a50964d6a3194552a7ef057cc6, findElement {value=(//button[@class='watch-from-start__join-live-button___1LqiX'])[1], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61898/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc4d57a50964d6a3194552a7ef057cc6
+Command: [bd4535a7c9fd72453ffa7e2a9a0f9c23, findElement {value=//h4[normalize-space()='EKO Acropolis Rally Greece: Stage 13'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59017/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd4535a7c9fd72453ffa7e2a9a0f9c23
 at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -79,8 +79,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 ... 31 more
 ]]>
@@ -89,18 +89,18 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenEvent -->
-        <test-method signature="startTexting()[pri:3, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-07T23:29:02 IST" name="startTexting" finished-at="2024-09-07T23:29:52 IST" duration-ms="50162" status="FAIL">
+        <test-method signature="startTexting()[pri:3, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-08T12:14:51 IST" name="startTexting" finished-at="2024-09-08T12:15:41 IST" duration-ms="50377" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .sc-breuTD.cznXtV (tried for 50 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: button[class='sc-crXcEl couCKK'] (tried for 50 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .sc-breuTD.cznXtV (tried for 50 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: button[class='sc-crXcEl couCKK'] (tried for 50 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.dazn.automation.utils.Waits.waitForVisibilityOfElement(Waits.java:22)
-at com.dazn.automation.pages.EventPage.clickOnAgeRestrictionBtn(EventPage.java:69)
-at com.dazn.automation.tests.EventPageTest.startTexting(EventPageTest.java:55)
+at com.dazn.automation.pages.EventPage.clickOnAgeRestrictionBtn(EventPage.java:63)
+at com.dazn.automation.tests.EventPageTest.startTexting(EventPageTest.java:70)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,9 +135,9 @@ from unknown error: web view not found
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc4d57a50964d6a3194552a7ef057cc6, findElement {value=.sc-breuTD.cznXtV, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61898}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61898/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc4d57a50964d6a3194552a7ef057cc6
+Command: [bd4535a7c9fd72453ffa7e2a9a0f9c23, findElement {value=button[class='sc-crXcEl couCKK'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59017/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd4535a7c9fd72453ffa7e2a9a0f9c23
 at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -163,7 +163,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTexting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-07T23:29:52 IST" name="tearDown" finished-at="2024-09-07T23:29:52 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dazn.automation.tests.EventPageTest@35dab4eb]" started-at="2024-09-08T12:15:41 IST" name="tearDown" finished-at="2024-09-08T12:15:41 IST" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,14 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DAZN Automation Suite" parallel="false">
 
-<suite name="Automation Test Suite" parallel="false">
+    <!-- Define browser parameter, can be passed dynamically (chrome/edge) -->
+    <parameter name="browser" value="chrome"/>
 
-    <!-- Define multiple tests -->
-   
-
-    <test name="Regression Tests">
+    <test name="Event Page Tests">
         <classes>
-            <!-- Define regression test classes -->
-            <class name="com.automation.tests.EventPage.java" />
+            <!-- Add your test class here -->
+            <class name="com.dazn.automation.tests.EventPageTest"/>
         </classes>
     </test>
 
