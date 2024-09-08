@@ -1,0 +1,3 @@
+# Created at 2024-09-08T11:01:07.924
+Surefire is going to kill self fork JVM. The exit has elapsed 30 seconds after System.exit(0).
+
