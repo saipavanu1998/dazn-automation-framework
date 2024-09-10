@@ -15,7 +15,6 @@ import com.dazn.automation.pages.EventPage;
 import com.dazn.automation.pages.HomePage;
 import com.dazn.automation.pages.LoginPage;
 
-@Listeners(com.dazn.automation.listeners.ExtentReportListener.class)
 
 public class EventPageTest {
 
