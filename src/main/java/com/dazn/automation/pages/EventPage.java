@@ -20,7 +20,7 @@ public class EventPage {
     private By messageList = By.xpath("//div[@data-testid='messages-list-container']");
     private By fzLoader = By.cssSelector(".sc-evZas.jFUGBX.loader-container");
     private By showFZ = By.xpath("(//div[@class='sc-breuTD cznXtV'])[1]");
-    private By ageRestrictionBtn = By.cssSelector("button[class='sc-crXcEl couCKK']");
+    private By ageRestrictionBtn = By.cssSelector(".sc-crXcEl couCKK");
     private By chatMessages = By.xpath("(//div[@class='sc-tQuYZ bRrJnM'])");
 
     public EventPage(WebDriver driver) {

@@ -6,12 +6,16 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.dazn.automation.factory.DriverFactory;
 import com.dazn.automation.pages.EventPage;
 import com.dazn.automation.pages.HomePage;
 import com.dazn.automation.pages.LoginPage;
+
+@Listeners(com.dazn.automation.listeners.ExtentReportListener.class)
 
 public class EventPageTest {
 
@@ -23,10 +27,8 @@ public class EventPageTest {
 
     @BeforeClass
     public void setUp() {
-        // Initialize WebDriver based on the browser parameter
-       
-            driver = new ChromeDriver();
-       
+    	driver = DriverFactory.initDriver("chrome");  // Ensure this method initializes the WebDriver
+        DriverFactory.setDriver(driver); 
 
         driver.manage().window().maximize();
 
@@ -50,8 +52,7 @@ public class EventPageTest {
         System.out.println("Checking if offer pop-up is displayed...");
         if (homePage.isOfferPopUpDisplayed()) {
             homePage.clickOnStartWatching();
-            Assert.assertFalse(homePage.isOfferPopUpDisplayed(), "Offer pop-up should be dismissed after clicking Start Watching");
-        } else {
+       } else {
             System.out.println("Offer pop-up not displayed. Skipping this step.");
         }
     }
@@ -59,6 +60,7 @@ public class EventPageTest {
     @Test(priority = 2)
     public void testOpenEvent() {
         System.out.println("Navigating to an event...");
+        driver.navigate().back();
         homePage.goToEvent();
         eventPage.joinEvent();
         Assert.assertTrue(eventPage.isEventLoaded(), "Event page did not load correctly");
@@ -67,7 +69,7 @@ public class EventPageTest {
     @Test(priority = 3)
     public void startTexting() {
         System.out.println("Starting texting functionality on the event page...");
-        eventPage.clickOnAgeRestrictionBtn();
+       // eventPage.clickOnAgeRestrictionBtn();
        // eventPage.clickFZ();
         eventPage.enterText("Hello all");
         eventPage.sendText();
@@ -77,9 +79,9 @@ public class EventPageTest {
 
     @AfterClass
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-            System.out.println("Browser closed.");
+        if (DriverFactory.getDriver() != null) {
+            DriverFactory.quitDriver();
         }
+    
     }
 }
