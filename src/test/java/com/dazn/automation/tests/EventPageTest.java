@@ -61,7 +61,7 @@ public class EventPageTest {
         System.out.println("Navigating to an event...");
         driver.navigate().back();
         homePage.goToEvent();
-        Assert.assertTrue(eventPage.isEventLoaded(), "Event page did not load correctly");
+        Assert.assertTrue(eventPage.isEventLoaded(), " Event page did not load correctly");
         eventPage.joinEvent();
         //Assert.assertTrue(eventPage.isEventLoaded(), "Event page did not load correctly");
     }
