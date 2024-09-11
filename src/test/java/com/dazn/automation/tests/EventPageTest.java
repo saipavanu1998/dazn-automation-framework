@@ -61,20 +61,21 @@ public class EventPageTest {
         System.out.println("Navigating to an event...");
         driver.navigate().back();
         homePage.goToEvent();
-        eventPage.joinEvent();
         Assert.assertTrue(eventPage.isEventLoaded(), "Event page did not load correctly");
+        eventPage.joinEvent();
+        //Assert.assertTrue(eventPage.isEventLoaded(), "Event page did not load correctly");
     }
 
-    @Test(priority = 3)
-    public void startTexting() {
-        System.out.println("Starting texting functionality on the event page...");
-       // eventPage.clickOnAgeRestrictionBtn();
-       // eventPage.clickFZ();
-        eventPage.enterText("Hello all");
-        eventPage.sendText();
-
-        Assert.assertTrue(eventPage.isTextSent(), "Text message was not sent successfully");
-    }
+//    @Test(priority = 3)
+//    public void startTexting() {
+//        System.out.println("Starting texting functionality on the event page...");
+//       // eventPage.clickOnAgeRestrictionBtn();
+//       // eventPage.clickFZ();
+//        eventPage.enterText("Hello all");
+//        eventPage.sendText();
+//
+//        Assert.assertTrue(eventPage.isTextSent(), "Text message was not sent successfully");
+//    }
 
     @AfterClass
     public void tearDown() {

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 10 18:15:54 IST 2024</td>
+<td>Started on:</td><td>Wed Sep 11 15:01:12 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>146 seconds (146467 ms)</td>
+<tr><td>Total time:</td><td>78 seconds (78400 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dazn.automation.tests.EventPageTest.testOpenEvent()'><b>testOpenEvent</b><br>Test class: com.dazn.automation.tests.EventPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[@class=&apos;watch-from-start__join-live-button___1LqiX&apos;])[1] (tried for 50 second(s) with 500 milliseconds interval)
+<td title='com.dazn.automation.tests.EventPageTest.startTexting()'><b>startTexting</b><br>Test class: com.dazn.automation.tests.EventPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: textarea[placeholder=&apos;Start typing...&apos;] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49677/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd5619d011b765aedbc3d3dc894d88a7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56885/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0f58218b88a953ce4d33ffa8062d48e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.dazn.automation.utils.Waits.waitForVisibilityOfElement(Waits.java:22)
-	at com.dazn.automation.pages.EventPage.joinEvent(EventPage.java:34)
-	at com.dazn.automation.tests.EventPageTest.testOpenEvent(EventPageTest.java:65)
+	at com.dazn.automation.pages.EventPage.enterText(EventPage.java:40)
+	at com.dazn.automation.tests.EventPageTest.startTexting(EventPageTest.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -114,18 +114,18 @@ Session ID: cd5619d011b765aedbc3d3dc894d88a7
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1630413241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1630413241'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//button[@class=&apos;watch-from-start__join-live-button___1LqiX&apos;])[1] (tried for 50 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace589610983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace589610983'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: textarea[placeholder=&apos;Start typing...&apos;] (tried for 50 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49677/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cd5619d011b765aedbc3d3dc894d88a7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\SAIPAV~1.UPP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56885}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56885/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0f58218b88a953ce4d33ffa8062d48e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.dazn.automation.utils.Waits.waitForVisibilityOfElement(Waits.java:22)
-	at com.dazn.automation.pages.EventPage.joinEvent(EventPage.java:34)
-	at com.dazn.automation.tests.EventPageTest.testOpenEvent(EventPageTest.java:65)
+	at com.dazn.automation.pages.EventPage.enterText(EventPage.java:40)
+	at com.dazn.automation.tests.EventPageTest.startTexting(EventPageTest.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -153,8 +153,8 @@ Session ID: cd5619d011b765aedbc3d3dc894d88a7
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>65</td>
-<td>com.dazn.automation.tests.EventPageTest@6b695b06</td></tr>
+<td>50</td>
+<td>com.dazn.automation.tests.EventPageTest@72bc6553</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -165,10 +165,15 @@ Session ID: cd5619d011b765aedbc3d3dc894d88a7
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.dazn.automation.tests.EventPageTest.testOpenEvent()'><b>testOpenEvent</b><br>Test class: com.dazn.automation.tests.EventPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.dazn.automation.tests.EventPageTest@72bc6553</td></tr>
+<tr>
 <td title='com.dazn.automation.tests.EventPageTest.testPopUpAvailability()'><b>testPopUpAvailability</b><br>Test class: com.dazn.automation.tests.EventPageTest</td>
 <td></td>
-<td>11</td>
-<td>com.dazn.automation.tests.EventPageTest@6b695b06</td></tr>
+<td>8</td>
+<td>com.dazn.automation.tests.EventPageTest@72bc6553</td></tr>
 </table><p>
 </body>
 </html>

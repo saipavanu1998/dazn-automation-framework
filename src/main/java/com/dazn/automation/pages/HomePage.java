@@ -14,7 +14,7 @@ public class HomePage {
     // Locators for elements on the HomePage
     private By offerPopUp = By.xpath("(//div[@class='OfferPopup__content___3FXDU OfferPopup__content-new-layout___1glrq'])[1]");
     private By startWatching = By.xpath("(//button[@class='sc-pyfCe sc-kDvujY gTYMya ihnwix OfferPopup__cta___39Cvo OfferPopup__cta-new-layout___1LvRF OfferPopup__nfl-monthly-flex-cta-instalments___365IP'])");
-    private By eventName = By.xpath("//h4[normalize-space()='USA - Chile']");
+    private By eventName = By.xpath("//h4[normalize-space()='Chunichi Dragons v Tokyo Yakult Swallows']");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
